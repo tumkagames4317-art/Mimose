@@ -1687,32 +1687,6 @@
     <public type="color" name="m3_dynamic_highlighted_text" id="0x7f06008f" />
     <public type="color" name="m3_dynamic_hint_foreground" id="0x7f060090" />
     <public type="color" name="m3_dynamic_primary_text_disable_only" id="0x7f060091" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral0" id="0x7f0600a0" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral10" id="0x7f0600a1" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral100" id="0x7f0600a2" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral20" id="0x7f0600a3" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral30" id="0x7f0600a4" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral40" id="0x7f0600a5" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral50" id="0x7f0600a6" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral60" id="0x7f0600a7" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral70" id="0x7f0600a8" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral80" id="0x7f0600a9" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral90" id="0x7f0600aa" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral95" id="0x7f0600ab" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral99" id="0x7f0600ac" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral_variant0" id="0x7f0600ad" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral_variant10" id="0x7f0600ae" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral_variant100" id="0x7f0600af" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral_variant20" id="0x7f0600b0" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral_variant30" id="0x7f0600b1" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral_variant40" id="0x7f0600b2" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral_variant50" id="0x7f0600b3" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral_variant60" id="0x7f0600b4" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral_variant70" id="0x7f0600b5" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral_variant80" id="0x7f0600b6" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral_variant90" id="0x7f0600b7" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral_variant95" id="0x7f0600b8" />
-    <public type="color" name="m3_ref_palette_dynamic_neutral_variant99" id="0x7f0600b9" />
     <public type="color" name="m3_ref_palette_dynamic_primary0" id="0x7f0600ba" />
     <public type="color" name="m3_ref_palette_dynamic_primary10" id="0x7f0600bb" />
     <public type="color" name="m3_ref_palette_dynamic_primary100" id="0x7f0600bc" />
