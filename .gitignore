@@ -1,303 +1,129 @@
-# Build artifacts
-build/
-dist/
+```
+# Build artifacts and compiled files
 *.apk
-*.aab
+*.idsig
+*.keystore
 *.dex
 *.so
+*.aar
 *.jar
+*.class
+*.oat
+*.odex
+*.zipaligned
 
-# Decompile outputs
-*.smali
-*.arsc
-*.xml
-*.json
+# Decomplied APK directories
+extracted_apk/
 
-# Temporary files
-*.tmp
-*.temp
-*.log
-
-# IDE files
-.vscode/
-.idea/
-*.iml
-*.iws
-*.ipr
-
-# Environment
-.env
-.env.local
-.env.*
-
-# Dependencies
-node_modules/
-venv/
-.venv/
-__pycache__/
-*.egg-info/
-.Python
-pip-log.txt
-pip-delete-this-directory.txt
-
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Testing
-.coverage
-htmlcov/
-.coverage.*
-.nyc_output
-istanbul.out
-coverage/
-junit.xml
-test-results/
-
-# Security
-secret.key
-*.key
-*.pem
-id_rsa
-id_rsa.pub
-
-# Compression archives
-*.zip
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.rar
-*.7z
-*.gz
-*.bz2
-*.xz
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-
-# Gradle
-.gradle/
+# Debug and release builds
+debug/
+release/
 build/
-!gradle/
-gradlew
-gradlew.bat
-settings.gradle
 
 # Android specific
 *.ap_
 *.apks
 *.aab
-*.keystore
-*.jks
-local.properties
-captures/
-.externalNativeBuild
-.cxx/
-.gradle/
-*.keystore
-debug.keystore
-release.keystore
-lint-results-*.xml
-lint-baseline.xml
-androidTest-results/
-.gradle-wrapper/
-.pro
-*.pro.backup
+*.so
+*.jar
+libs/
 gen/
-bin/
-gen-external-apklibs/
-apks/
-*.flattened-aapt2-debug-store
-*.flattened-aapt2-release-store
-.flattened-aapt2/
-.intermediates/
-.pre-dex/
-.dex
-.incremental
-.profile
-.prof
-*.mapping.txt
-*.map
-*.log
-*.lock
-*.timestamp
-*.tag
-*.sha1
-*.sha256
-*.md5
-*.properties
-*.lockfile
+local.properties
+
+# Temporary and log files
 *.tmp
-*.temp
-*.cache
-*.cached
-*.backup
-*.bak
-*.old
-*.orig
-*.rej
-*.patch
-*.diff
+*.log
 *.swp
 *.swo
-*~
-\#*\#
-.\#*
-*.pyc
-*.pyo
-*.pyd
-*.class
-*.dll
-*.so
-*.dylib
-*.exe
-*.out
-*.o
-*.a
-*.lib
-*.obj
-*.pdb
-*.ilk
-*.res
-*.rsp
-*.pch
-*.pdbx
-*.db
+
+# IDE specific
+.idea/
+.vscode/
+*.iml
+*.iws
 *.db-shm
 *.db-wal
-*.idx
-*.pid
-*.seed
-*.profdata
-*.gcda
-*.gcno
-*.gcov
-*.lcov
-*.info
-*.dynstr
-*.dynsym
-*.strtab
-*.symtab
-*.hash
-*.gnu.hash
-*.note.gnu.build-id
-*.interp
-*.rel*
-*.plt
-*.got
-*.eh_frame
-*.eh_frame_hdr
-*.debug_info
-*.debug_line
-*.debug_str
-*.debug_loc
-*.debug_ranges
-*.debug_abbrev
-*.debug_pubnames
-*.debug_pubtypes
-*.debug_aranges
-*.debug_macro
-*.debug_names
-*.gdb_index
-*.gdb_index.bin
-*.gdb_index.text
-*.gdb_index.data
-*.gdb_index.str
-*.gdb_index.sym
-*.gdb_index.loc
-*.gdb_index.rng
-*.gdb_index.mac
-*.gdb_index.nam
-*.gdb_index.pub
-*.gdb_index.arng
-*.gdb_index.macro
-*.gdb_index.names
-*.gdb_index.pubnames
-*.gdb_index.pubtypes
-*.gdb_index.aranges
-*.gdb_index.macro
-*.gdb_index.names
-*.gdb_index.pubnames
-*.gdb_index.pubtypes
-*.gdb_index.aranges
-*.gdb_index.macro
-*.gdb_index.names
-*.gdb_index.pubnames
-*.gdb_index.pubtypes
-*.gdb_index.aranges
-*.gdb_index.macro
-*.gdb_index.names
-*.gdb_index.pubnames
-*.gdb_index.pubtypes
-*.gdb_index.aranges
-*.gdb_index.macro
-*.gdb_index.names
-*.gdb_index.pubnames
-*.gdb_index.pubtypes
-*.gdb_index.aranges
-*.gdb_index.macro
-*.gdb_index.names
-*.gdb_index.pubnames
-*.gdb_index.pubtypes
-*.gdb_index.aranges
-*.gdb_index.macro
-*.gdb_index.names
-*.gdb_index.pubnames
-*.gdb_index.pubtypes
-*.gdb_index.aranges
-*.gdb_index.macro
-*.gdb_index.names
-*.gdb_index.pubnames
-*.gdb_index.pubtypes
-*.gdb_index.aranges
-*.gdb_index.macro
-*.gdb_index.names
-*.gdb_index.pubnames
-*.gdb_index.pubtypes
-*.gdb_index.aranges
-*.gdb_index.macro
-*.gdb_index.names
-*.gdb_index.pubnames
-*.gdb_index.pubtypes
-*.gdb_index.aranges
-*.gdb_index.macro
-*.gdb_index.names
-*.gdb_index.pubnames
-*.gdb_index.pubtypes
-*.gdb_index.aranges
-*.gdb_index.macro
-*.gdb_index.names
-*.gdb_index.pubnames
-*.gdb_index.pubtypes
-*.gdb_index.aranges
-*.gdb_index.macro
-*.gdb_index.names
-*.gdb_index.pubnames
-*.gdb_index.pubtypes
-*.gdb_index.aranges
-*.gdb_index.macro
-*.gdb_index.names
-*.gdb_index.pubnames
-*.gdb_index.pubtypes
-*.gdb_index.aranges
-*.gdb_index.macro
-*.gdb_index.names
-*.gdb_index.pubnames
-*.gdb_index.pubtypes
-*.gdb_index.aranges
-*.gdb_index.macro
-*.gdb_index.names
-*.gdb_index.pubnames
-*.gdb_index.pubtypes......
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment and config
+.env
+.env.local
+*.env.*
+
+# Java/Kotlin compiled
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# Gradle
+.gradle/
+build/
+
+# Kotlin
+.kotlin_module
+
+# Okio and other libraries
+okio/
+okhttp3/
+kotlinx/
+
+# Commons codec and IO
+org/apache/commons/
+
+# Timber logging
+timber/
+
+# React Native
+react-native/
+
+# Android support
+android/support/
+androidx/
+
+# Google material design
+com/google/android/material/
+
+# ExoPlayer
+com/google/android/exoplayer2/
+
+# Guava
+com/google/common/
+
+# Apache commons
+org/apache/commons/
+
+# JetBrains annotations
+org/jetbrains/annotations/
+
+# Intellij annotations
+org/intellij/lang/annotations/
+
+# Proguard and R8
+proguard/
+shrinked/
+obfuscated/
+
+# APK analyzer files
+*.bin
+*.txt
+*.json
+*.xml
+
+# Resource files that are extracted
+res/
+assets/
+META-INF/
+
+# Backup and temporary files
+*~
+*.bak
+*.backup
+temp/
+tmp/
+
+```
