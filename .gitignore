@@ -1,129 +1,90 @@
 ```
-# Build artifacts and compiled files
+# Android build outputs
 *.apk
-*.idsig
-*.keystore
+*.aar
 *.dex
 *.so
-*.aar
 *.jar
-*.class
-*.oat
-*.odex
-*.zipaligned
 
-# Decomplied APK directories
-extracted_apk/
+# Android resource files (generated)
+res/
 
-# Debug and release builds
-debug/
-release/
+# Android manifest
+AndroidManifest.xml
+
+# Build directories
 build/
-
-# Android specific
-*.ap_
-*.apks
-*.aab
-*.so
-*.jar
-libs/
+bin/
 gen/
-local.properties
+out/
 
-# Temporary and log files
+# APK files
+*.apk
+*.ap_
+*.id_sig
+
+# Keystore files
+*.keystore
+*.jks
+
+# Debug and release files
+debug.keystore
+
+# Decoded resources
+base_decoded/
+
+# Temporary files
 *.tmp
-*.log
-*.swp
-*.swo
+*.temp
 
-# IDE specific
+# Log files
+*.log
+
+# IDE files
 .idea/
 .vscode/
-*.iml
-*.iws
-*.db-shm
-*.db-wal
+
+# Gradle
+.gradle/
+local.properties
+
+# Kotlin
+.kotlin/
+.kotlincache/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Bytecode and compiled files
+*.class
+*.o
+*.obj
+*.out
+
+# Dependency directories
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.egg-info/
 
 # System files
 .DS_Store
 Thumbs.db
 
-# Environment and config
+# Configuration files
+config.json
 .env
 .env.local
-*.env.*
 
-# Java/Kotlin compiled
-*.class
-*.jar
-*.war
-*.ear
-target/
+# Coverage reports
+coverage/
+htmlcov/
 
-# Gradle
-.gradle/
-build/
-
-# Kotlin
-.kotlin_module
-
-# Okio and other libraries
-okio/
-okhttp3/
-kotlinx/
-
-# Commons codec and IO
-org/apache/commons/
-
-# Timber logging
-timber/
-
-# React Native
-react-native/
-
-# Android support
-android/support/
-androidx/
-
-# Google material design
-com/google/android/material/
-
-# ExoPlayer
-com/google/android/exoplayer2/
-
-# Guava
-com/google/common/
-
-# Apache commons
-org/apache/commons/
-
-# JetBrains annotations
-org/jetbrains/annotations/
-
-# Intellij annotations
-org/intellij/lang/annotations/
-
-# Proguard and R8
-proguard/
-shrinked/
-obfuscated/
-
-# APK analyzer files
-*.bin
-*.txt
-*.json
-*.xml
-
-# Resource files that are extracted
-res/
-assets/
-META-INF/
-
-# Backup and temporary files
-*~
-*.bak
-*.backup
-temp/
-tmp/
+# Test results
+test-results/
 
 ```
