@@ -2485,9 +2485,6 @@
     <public type="dimen" name="tooltip_vertical_padding" id="0x7f07026d" />
     <public type="dimen" name="tooltip_y_offset_non_touch" id="0x7f07026e" />
     <public type="dimen" name="tooltip_y_offset_touch" id="0x7f07026f" />
-    <public type="drawable" name="avd_show_password__0" id="0x7f080003" />
-    <public type="drawable" name="avd_show_password__1" id="0x7f080004" />
-    <public type="drawable" name="avd_show_password__2" id="0x7f080005" />
     <public type="drawable" name="abc_action_bar_item_background_material" id="0x7f080007" />
     <public type="drawable" name="abc_btn_borderless_material" id="0x7f080008" />
     <public type="drawable" name="abc_btn_check_material" id="0x7f080009" />
