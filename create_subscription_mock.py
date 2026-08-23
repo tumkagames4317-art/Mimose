@@ -13,7 +13,7 @@ import os
 import shutil
 from pathlib import Path
 
-BASE_DIR = Path("/workspace/extracted_apk/base_decoded")
+BASE_DIR = Path("/workspace/base_decoded")
 RES_VALUES = BASE_DIR / "res" / "values"
 
 def add_subscription_strings():
