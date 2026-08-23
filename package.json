@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "hermes-parser": "^0.37.0"
+  },
+  "devDependencies": {
+    "hermes-engine": "^0.11.0"
+  }
+}
