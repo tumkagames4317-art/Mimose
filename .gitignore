@@ -1,90 +1,68 @@
 ```
-# Android build outputs
+# APK build artifacts and extracted files
+zdesapk/
+
+# Compiled Kotlin built-ins and metadata
+*.kotlin_builtins
+kotlin/
+
+# Android-specific files
+*.dex
 *.apk
 *.aar
-*.dex
-*.so
 *.jar
+*.so
+*.dylib
+*.dll
 
-# Android resource files (generated)
-res/
-
-# Android manifest
-AndroidManifest.xml
-
-# Build directories
+# Build outputs
 build/
-bin/
-gen/
+dist/
 out/
+target/
 
-# APK files
-*.apk
-*.ap_
-*.id_sig
+# Dependencies and caches
+.gradle/
+.cargo/
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Keystore files
-*.keystore
-*.jks
-
-# Debug and release files
-debug.keystore
-
-# Decoded resources
-base_decoded/
-
-# Temporary files
+# Temporary and system files
 *.tmp
 *.temp
-
-# Log files
 *.log
-
-# IDE files
-.idea/
-.vscode/
-
-# Gradle
-.gradle/
-local.properties
-
-# Kotlin
-.kotlin/
-.kotlincache/
-
-# Java
-*.class
-*.jar
-*.war
-*.ear
-
-# Bytecode and compiled files
-*.class
-*.o
-*.obj
-*.out
-
-# Dependency directories
-node_modules/
-venv/
-.venv/
-__pycache__/
-*.egg-info/
-
-# System files
 .DS_Store
 Thumbs.db
 
-# Configuration files
-config.json
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment files
 .env
 .env.local
+*.env.*
 
-# Coverage reports
+# Coverage and testing
 coverage/
 htmlcov/
+.coverage
+*.prof
+*.profm
 
-# Test results
-test-results/
-
+# Archives
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
 ```
