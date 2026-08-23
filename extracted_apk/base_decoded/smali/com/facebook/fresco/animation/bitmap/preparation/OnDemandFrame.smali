@@ -1,0 +1,145 @@
+.class final Lcom/facebook/fresco/animation/bitmap/preparation/OnDemandFrame;
+.super Ljava/lang/Object;
+.source "BalancedAnimationStrategy.kt"
+
+# interfaces
+.implements Ljava/io/Closeable;
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0008\u0002\u0018\u00002\u00020\u0001B\u001b\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005\u00a2\u0006\u0002\u0010\u0007J\u0008\u0010\u000c\u001a\u00020\rH\u0016J\u000e\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003R\u0017\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0008\u0010\tR\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000b\u00a8\u0006\u0010"
+    }
+    d2 = {
+        "Lcom/facebook/fresco/animation/bitmap/preparation/OnDemandFrame;",
+        "Ljava/io/Closeable;",
+        "frameNumber",
+        "",
+        "bitmap",
+        "Lcom/facebook/common/references/CloseableReference;",
+        "Landroid/graphics/Bitmap;",
+        "(ILcom/facebook/common/references/CloseableReference;)V",
+        "getBitmap",
+        "()Lcom/facebook/common/references/CloseableReference;",
+        "getFrameNumber",
+        "()I",
+        "close",
+        "",
+        "isValidFor",
+        "",
+        "animated-drawable_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field private final bitmap:Lcom/facebook/common/references/CloseableReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/facebook/common/references/CloseableReference<",
+            "Landroid/graphics/Bitmap;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final frameNumber:I
+
+
+# direct methods
+.method public constructor <init>(ILcom/facebook/common/references/CloseableReference;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Lcom/facebook/common/references/CloseableReference<",
+            "Landroid/graphics/Bitmap;",
+            ">;)V"
+        }
+    .end annotation
+
+    const-string v0, "bitmap"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 262
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p1, p0, Lcom/facebook/fresco/animation/bitmap/preparation/OnDemandFrame;->frameNumber:I
+
+    iput-object p2, p0, Lcom/facebook/fresco/animation/bitmap/preparation/OnDemandFrame;->bitmap:Lcom/facebook/common/references/CloseableReference;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public close()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/facebook/fresco/animation/bitmap/preparation/OnDemandFrame;->bitmap:Lcom/facebook/common/references/CloseableReference;
+
+    .line 267
+    invoke-virtual {v0}, Lcom/facebook/common/references/CloseableReference;->close()V
+
+    return-void
+.end method
+
+.method public final getBitmap()Lcom/facebook/common/references/CloseableReference;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/facebook/common/references/CloseableReference<",
+            "Landroid/graphics/Bitmap;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/facebook/fresco/animation/bitmap/preparation/OnDemandFrame;->bitmap:Lcom/facebook/common/references/CloseableReference;
+
+    return-object v0
+.end method
+
+.method public final getFrameNumber()I
+    .locals 1
+
+    iget v0, p0, Lcom/facebook/fresco/animation/bitmap/preparation/OnDemandFrame;->frameNumber:I
+
+    return v0
+.end method
+
+.method public final isValidFor(I)Z
+    .locals 1
+
+    iget v0, p0, Lcom/facebook/fresco/animation/bitmap/preparation/OnDemandFrame;->frameNumber:I
+
+    if-ne v0, p1, :cond_0
+
+    iget-object p1, p0, Lcom/facebook/fresco/animation/bitmap/preparation/OnDemandFrame;->bitmap:Lcom/facebook/common/references/CloseableReference;
+
+    .line 264
+    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->isValid()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
+.end method

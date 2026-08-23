@@ -1,0 +1,152 @@
+.class public final Lexpo/modules/av/AVModule$definition$lambda$24$$inlined$AsyncFunctionWithPromise$17;
+.super Lkotlin/jvm/internal/Lambda;
+.source "ObjectDefinitionBuilder.kt"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lexpo/modules/av/AVModule;->definition()Lexpo/modules/kotlin/modules/ModuleDefinitionData;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lkotlin/jvm/functions/Function2<",
+        "[",
+        "Ljava/lang/Object;",
+        "Lexpo/modules/kotlin/Promise;",
+        "Lkotlin/Unit;",
+        ">;"
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nObjectDefinitionBuilder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ObjectDefinitionBuilder.kt\nexpo/modules/kotlin/objects/ObjectDefinitionBuilder$AsyncFunction$18\n+ 2 EnforceType.kt\nexpo/modules/kotlin/types/EnforceTypeKt\n+ 3 AVModule.kt\nexpo/modules/av/AVModule\n*L\n1#1,505:1\n22#2,4:506\n78#3,2:510\n*S KotlinDebug\n*F\n+ 1 ObjectDefinitionBuilder.kt\nexpo/modules/kotlin/objects/ObjectDefinitionBuilder$AsyncFunction$18\n*L\n296#1:506,4\n*E\n"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u001c\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0011\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0000\u001a\u00020\u0001\"\u0006\u0008\u0000\u0010\u0002\u0018\u0001\"\u0006\u0008\u0001\u0010\u0003\u0018\u0001\"\u0006\u0008\u0002\u0010\u0004\u0018\u0001\"\u0006\u0008\u0003\u0010\u0005\u0018\u00012\u0010\u0010\u0006\u001a\u000c\u0012\u0008\u0008\u0001\u0012\u0004\u0018\u00010\u00080\u00072\u0006\u0010\t\u001a\u00020\nH\n\u00a2\u0006\u0004\u0008\u000b\u0010\u000c\u00a8\u0006\r"
+    }
+    d2 = {
+        "<anonymous>",
+        "",
+        "R",
+        "P0",
+        "P1",
+        "P2",
+        "<name for destructuring parameter 0>",
+        "",
+        "",
+        "promise",
+        "Lexpo/modules/kotlin/Promise;",
+        "invoke",
+        "([Ljava/lang/Object;Lexpo/modules/kotlin/Promise;)V",
+        "expo/modules/kotlin/objects/ObjectDefinitionBuilder$AsyncFunction$18"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lexpo/modules/av/AVModule;
+
+
+# direct methods
+.method public constructor <init>(Lexpo/modules/av/AVModule;)V
+    .locals 0
+
+    iput-object p1, p0, Lexpo/modules/av/AVModule$definition$lambda$24$$inlined$AsyncFunctionWithPromise$17;->this$0:Lexpo/modules/av/AVModule;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 298
+    check-cast p1, [Ljava/lang/Object;
+
+    check-cast p2, Lexpo/modules/kotlin/Promise;
+
+    invoke-virtual {p0, p1, p2}, Lexpo/modules/av/AVModule$definition$lambda$24$$inlined$AsyncFunctionWithPromise$17;->invoke([Ljava/lang/Object;Lexpo/modules/kotlin/Promise;)V
+
+    sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p1
+.end method
+
+.method public final invoke([Ljava/lang/Object;Lexpo/modules/kotlin/Promise;)V
+    .locals 3
+
+    const-string v0, "<name for destructuring parameter 0>"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "promise"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    .line 295
+    aget-object v0, p1, v0
+
+    const/4 v1, 0x1
+
+    aget-object v1, p1, v1
+
+    const/4 v2, 0x2
+
+    aget-object p1, p1, v2
+
+    .line 297
+    check-cast p1, Lexpo/modules/core/arguments/ReadableArguments;
+
+    check-cast v1, Lexpo/modules/core/arguments/ReadableArguments;
+
+    check-cast v0, Ljava/lang/Number;
+
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    move-result v0
+
+    iget-object v2, p0, Lexpo/modules/av/AVModule$definition$lambda$24$$inlined$AsyncFunctionWithPromise$17;->this$0:Lexpo/modules/av/AVModule;
+
+    .line 510
+    invoke-static {v2}, Lexpo/modules/av/AVModule;->access$getAvManager(Lexpo/modules/av/AVModule;)Lexpo/modules/av/AVManagerInterface;
+
+    move-result-object v2
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    invoke-static {p2}, Lexpo/modules/av/AVModuleKt;->access$toLegacyPromise(Lexpo/modules/kotlin/Promise;)Lexpo/modules/core/Promise;
+
+    move-result-object p2
+
+    invoke-interface {v2, v0, v1, p1, p2}, Lexpo/modules/av/AVManagerInterface;->loadForVideo(Ljava/lang/Integer;Lexpo/modules/core/arguments/ReadableArguments;Lexpo/modules/core/arguments/ReadableArguments;Lexpo/modules/core/Promise;)V
+
+    return-void
+.end method
